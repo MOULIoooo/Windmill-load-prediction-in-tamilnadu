@@ -9,7 +9,7 @@ from xgboost import XGBRegressor
 @st.cache_data
 def load_and_train():
     # Load dataset
-    df = pd.read_csv("https://github.com/MOULIoooo/Windmill-load-prediction-in-tamilnadu/blob/main/TN_WindFarms_Weekly_IO_Static_2023_2025.csv")
+    df = pd.read_csv("TN_WindFarms_Weekly_IO_Static_2023_2025.csv")
 
     # Encode Maintenance Schedule
     schedule_map = {'Biannual': 2, 'Monthly': 1, 'Quarterly': 4}
