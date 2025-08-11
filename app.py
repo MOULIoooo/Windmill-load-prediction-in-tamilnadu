@@ -49,7 +49,7 @@ districts = ['Ambasamudram', 'Aralvaimozhi', 'Ariyalur', 'Chengalpattu',
 
 # Input form
 with st.form("input_form"):
-    year = st.number_input("Year", min_value=2023, max_value=2025, step=1)
+    year = st.number_input("Year", min_value=2023, max_value=2050, step=1)
     wind_speed = st.number_input("Wind Speed (m/s)")
     efficiency = st.number_input("Machine Efficiency")
     power_loss = st.number_input("Power Loss")
